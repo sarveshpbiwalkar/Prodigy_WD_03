@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Let's Play Tic Tac Toe</h1>
+    <br><br>
+    <div class="users">
+        <div>
+            <label for="user1Name">Enter user-1 name:-</label>
+            <input type="text" id="user1Name" placeholder="User 1 Name" required/>
+            <label for="user2Name">Enter user-2 name:-</label>
+            <input type="text" id="user2Name" placeholder="User 2 Name" required/>
+        </div><br>
+            <button onclick="validateInput(event)">Submit</button>
+    </div>
+    <br><br><br>
+    <div class="board">
+        <div class="cell" onclick="makeMove(0)"></div>
+        <div class="cell" onclick="makeMove(1)"></div>
+        <div class="cell" onclick="makeMove(2)"></div>
+        <div class="cell" onclick="makeMove(3)"></div>
+        <div class="cell" onclick="makeMove(4)"></div>
+        <div class="cell" onclick="makeMove(5)"></div>
+        <div class="cell" onclick="makeMove(6)"></div>
+        <div class="cell" onclick="makeMove(7)"></div>
+        <div class="cell" onclick="makeMove(8)"></div>
+    </div>
+    <br><br>
+    <button onclick="reset()">Reset</button>
+    <h2 id="result"></h2>
+    <script src="script.js"></script>
+    <footer>
+        Made with ❤️ by <a href="https://github.com/sarveshpbiwalkar">Sarvesh Biwalkar</a>
+    </footer>
+</body>
+</html>
